@@ -2,6 +2,7 @@ package com.example.shoppingcarty;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.*;
 
 public class MainActivity extends AppCompatActivity {
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         priceEditText = (EditText) findViewById(R.id.priceEditText);
 
         keyboardFrame = (FrameLayout) findViewById(R.id.keyboardFrame);
+        keyboardFrame.setVisibility(View.INVISIBLE);
 
         numberButton1 = (Button) findViewById(R.id.numberButton1);
         numberButton2 = (Button) findViewById(R.id.numberButton2);
